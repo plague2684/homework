@@ -1,5 +1,6 @@
 import masks
 
+
 def mask_account_card(card: str) -> str:
     """Функция которая прячет часть номера карты или счета"""
 
