@@ -13,3 +13,7 @@ def mask_account_card(card: str) -> str:
                 index = i
                 break
         return masks.get_mask_card_number(card, index)
+
+
+def get_date(date: str) -> str:
+    return f"{date[8:10]}.{date[5:7]}.{date[:4]}"
