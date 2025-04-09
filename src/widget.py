@@ -9,6 +9,4 @@ def mask_account_card(card: str) -> str:
             if card[i].isdigit():
                 index = i
                 break
-        return f"{card[:i-1]} {card[i:i+4]} {card[i+4:i+6]}** **** {card[-4:]}"
-
-print(mask_account_card("Visa Platinum 8990922113665229"))
+        return f"{card[:index-1]} {card[index:index+4]} {card[index+4:index+6]}** **** {card[-4:]}"
