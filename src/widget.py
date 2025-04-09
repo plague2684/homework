@@ -12,6 +12,3 @@ def mask_account_card(card: str) -> str:
                 index = i
                 break
         return masks.get_mask_card_number(card, index)
-
-
-print(mask_account_card("Maestro 1596837868705199"))
